@@ -4,24 +4,25 @@
 
 This is a simple content-based recommendation system that suggests movies based on a user's text description. It uses TF-IDF vectorization and cosine similarity to find movies with similar genres and plot descriptions.
 
-### Example Use Case
+### Dataset
 
-- The user inputs:  
-  *"I love thrilling action movies set in space, with a comedic twist."*  
-- Your system processes this description (query) and compares it to a dataset of items (e.g., movies with their plot summaries or keywords).  
-- You then return the **top 3–5 “closest” matches** to the user.
+The dataset consists of movie names, genres, and plot summaries.
+
+The data is stored in a Pandas DataFrame and processed into a TF-IDF matrix for similarity calculations.
+
+You can expand the dataset by adding more movies with descriptions
 
 ---
 
-## Requirements
+## Setup
 
-1. **Dataset**  
-   - Use a **small** public dataset of items (e.g., a list of movies with plot summaries, or other textual descriptions).  
-   - Make sure the dataset is easy to handle (maybe 100–500 rows) so the solution remains quick to implement and run.  
-   - Include the dataset in your forked repository *or* provide instructions/link on how to download it.  
+1. **Requirements**  
+    Python 3.8 or later
 
-2. **Approach**  
-   - **Content-Based**: At a minimum, use text similarity to recommend items.  
+    Virtual environment (optional but recommended) 
+
+2. **Installation Instructions**  
+   - **Clone this repository:**: At a minimum, use text similarity to recommend items.  
      - For instance, you can transform both the user’s text input and each item’s description into TF-IDF vectors and compute **cosine similarity**.  
    - Return the **top N** similar items (e.g., top 5).
 
