@@ -1,12 +1,8 @@
-# AI/Machine Learning Intern Challenge: Simple Content-Based Recommendation
+# Content-Based Movie Recommendation System
 
-**Deadline**: Sunday, Feb 23th 11:59 pm PST
+## Summary
 
----
-
-## Overview
-
-Build a **content-based recommendation system** that, given a **short text description** of a user’s preferences, suggests **similar items** (e.g., movies) from a small dataset. This challenge should take about **3 hours**, so keep your solution **simple** yet **functional**.
+This is a simple content-based recommendation system that suggests movies based on a user's text description. It uses TF-IDF vectorization and cosine similarity to find movies with similar genres and plot descriptions.
 
 ### Example Use Case
 
